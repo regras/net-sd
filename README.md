@@ -5,7 +5,7 @@ This repository contains two branches:
 - The `NCF-NET-SD` implementation, which is removes common blocks.
 
 # NET-SD
-A similarity search tool based on mrsh-v2 and modified to take advantage of sdhash characteristics.
+This tool is an adaptation of `MRSH-NET`, a similarity search tool based on `MRSH-V2`. This implementation changes the feature extraction tool, which is originally `MRSH-V2`'s to `sdhash`'s, aiming to improve its perfomance.
 
 ## Instructions
 
@@ -73,3 +73,6 @@ To search a list of files into a given bf digest:
 ```
 
 Obs.: I have not tested using a dir inside the given dir, so if you are going to use it please check for possible errors.
+
+
+# Related Publications
