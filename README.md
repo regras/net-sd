@@ -97,3 +97,6 @@ Brazilian Computer Society (SB).
 - Breitinger, F., Baier, H., and White, D. (2014a). On the database lookup problem of
 approximate matching. Digital Investigation, 11:S1–S9
 
+-Moia, V. H. G., Breitinger, F., and Henriques, M. A. A. (2020b). The impact of excluding
+common blocks for approximate matching. Computers & Security, 89:101676.
+
