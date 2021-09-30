@@ -1,8 +1,8 @@
-# mrsh-sd
+# NCF-NET-SD
 A similarity search tool based on mrsh-v2 and modified to take advantage of sdhash characteristics.
+The NCF implementation removes common files.
 
 ## Instructions
-
 ### Boost:
 1. Extract the library folder onto mrsh-sd's main folder
 2. Inside the boost folder run:
