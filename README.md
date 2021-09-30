@@ -31,13 +31,17 @@ $ ./b2 install
 $ cmake .
 $ make
 ```
-## Additional configs
+## Configs
 ### To change the database path
 File ./src/sdhash.cpp
 ```
 const char* DATA_BASE = "<absolute_path>";
 ```
-const char* DATA_BASE
+### To change the value of N
+File ./src/sdhash.cpp
+ ```
+#define MAXIMUM_NUM_COMMON_FEAT 
+```
 ### To modify the threshold of consecutive features  
 File ./header/config.h  
 ```
