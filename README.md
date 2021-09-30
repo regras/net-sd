@@ -53,25 +53,27 @@ And there are two ways of making such operations:
 - With a list 
 - With a dir/file name
 
-- Creation
- - Create a bf with a dir/filename:
- ```
- ./net_sd -g DIR/FILE > filter.sdbf
- ```
+# Usage
+- To create:
+  - a bf with a dir/filename:
+    ```
+    ./net_sd -g DIR/FILE > filter.sdbf
+    ```
 
- - Create a bf with a list:
- ```
- ./net_sd -d LIST.TXT > filter.sdbf
- ```
-- Search
- - search a file/dir into a given bf digest:
- ```
- ./net_sd -c filter.sdbf DIR/FILE > resultados.txt
- ```
- - search a list of files into a given bf digest:
- ```
- ./net_sd -i filter.sdbf list.txt > resultados.txt
- ```
+   - a bf with a list:
+   ```
+   ./net_sd -d LIST.TXT > filter.sdbf
+   ```
+   
+- To search:
+  - a file/dir into a given bf digest:
+  ```
+  ./net_sd -c filter.sdbf DIR/FILE > resultados.txt
+  ```
+  - a list of files into a given bf digest:
+  ```
+  ./net_sd -i filter.sdbf list.txt > resultados.txt
+  ```
 
 Obs.: I have not tested using a dir inside the given dir, so if you are going to use it please check for possible errors.
 
