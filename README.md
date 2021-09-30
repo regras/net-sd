@@ -7,6 +7,21 @@ This repository contains two branches:
 # NCF-NET-SD
 A common block removing implementation from `NET-SD`.
 
+
+# Related Publications
+```- Velho, J. P. B., Moia, V. H. G., and Henriques, M. A. A. (2020). Entendendo e melhorando
+a capacidade de detecçao de estrategias de busca de similaridade em investigações
+forenses. XX Brazilian Symposium on information and computational systems security,
+Brazilian Computer Society (SB).
+
+- Breitinger, F., Baier, H., and White, D. (2014a). On the database lookup problem of
+approximate matching. Digital Investigation, 11:S1–S9
+
+- Moia, V. H. G., Breitinger, F., and Henriques, M. A. A. (2020b). The impact of excluding
+common blocks for approximate matching. Computers & Security, 89:101676.
+
+- Moia, V.H.G., Breitinger, F., and Henriques, M.A.A. (2019). Understanding the effects of removing common blocks on approximate matching scores under different scenarios for digital forensic investigations. In XIX Brazilian Symposium on information and computational systems security (pp. 1-14). São Paulo-SP, Brazil: Brazilian Computer Society (SBC).
+```
 ## Instructions
 
 ### Dependencies
@@ -87,16 +102,4 @@ And there are two ways of making such operations:
   ```
 
 Obs.: I have not tested using a dir inside the given dir, so if you are going to use it please check for possible errors.
-
-# Related Publications
-- Velho, J. P. B., Moia, V. H. G., and Henriques, M. A. A. (2020). Entendendo e melhorando
-a capacidade de detecçao de estrategias de busca de similaridade em investigações
-forenses. XX Brazilian Symposium on information and computational systems security,
-Brazilian Computer Society (SB).
-
-- Breitinger, F., Baier, H., and White, D. (2014a). On the database lookup problem of
-approximate matching. Digital Investigation, 11:S1–S9
-
-- Moia, V. H. G., Breitinger, F., and Henriques, M. A. A. (2020b). The impact of excluding
-common blocks for approximate matching. Computers & Security, 89:101676.
 
