@@ -43,10 +43,10 @@ FILE *list;
 
 static void show_help(void) {
 	printf(
-			"\nmrsh-sdhash  by Frank Breitinger and modified by João Pedro Bizzi Velho\n"
+			"\nnet-sd  by Frank Breitinger and modified by João Pedro Bizzi Velho\n"
 					"Copyright (C) 2013 \n"
 					"\n"
-					"Usage: mrsh_sd [-gdcih]  DIR/FILE \n"
+					"Usage: net_sd [-gdcih]  DIR/FILE \n"
 					"OPTIONS: -g: Generate the database and print it to std (save to a file like: './mrsh_sd DIR > myDB, if it's a dir: ./dirname/* \n"
 					"         -d: Generate the database using a list of files './mrsh-net -d list.txt' \n"
 					"					-c: Reads DB-FILE and compares DIR/FILE against it ./mrsh_sd -c <digest> ./dir/*"
