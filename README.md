@@ -77,3 +77,10 @@ Obs.: I have not tested using a dir inside the given dir, so if you are going to
 
 
 # Related Publications
+- Velho, J. P. B., Moia, V. H. G., and Henriques, M. A. A. (2020). Entendendo e melhorando
+a capacidade de detecçao de estrategias de busca de similaridade em investigações
+forenses. XX Brazilian Symposium on information and computational systems security,
+Brazilian Computer Society (SB).
+
+- Breitinger, F., Baier, H., and White, D. (2014a). On the database lookup problem of
+approximate matching. Digital Investigation, 11:S1–S9
