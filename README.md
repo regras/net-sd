@@ -1,63 +1,81 @@
+# Repository Organization
+
+This repository contains two branches:
+- The main, which contains the original `NET-SD` implmentation.
+- The `NCF-NET-SD` implementation, which is removes common blocks.
+
 # NCF-NET-SD
-A similarity search tool based on mrsh-v2 and modified to take advantage of sdhash characteristics.
-The NCF implementation removes common files.
+A common block removing implementation from `NET-SD`.
 
 ## Instructions
-### Boost:
-1. Extract the library folder onto mrsh-sd's main folder
-2. Inside the boost folder run:
-```  
-$ ./bootstrap.sh
+
+### Dependencies
+- Boost
+- OpenSSL (for sha1 hash)
+- CMake
+
+#### Boost
+1. Extract the library folder onto `NET-SD`'s main folder
+ 
+2. Inside boost folder Run:
 ```
-3. Run:
-```  
-$ ./b2
-```
-4. Run and the setup is complete!
-```  
+$ ./bootstrap.sh --prefix = /usr/local/  
 $ ./b2 install
 ```
+3. The setup is complete!
+
+
 ### Compiling:
 1.  Run:
 ```  
+$ cmake .
 $ make
 ```
-### Generating a bloom filter based on a list of files:
-1.  List the files into a .txt file <list.txt>
-2.  Run:
-```
-$./mrsh_net -d <list.txt> > digest
-```
-### To compare a target list of files against a previously generated digest:
-
-1.  List the target files into a .txt file <target.txt>
-2.  Run:  
-```
-$ ./mrsh_net -i digest <target.txt>
-```
-
 ## Additional configs
-
-### To modify the output format: 
-  File ./src/main.c  
-  Function: evaluation  
-  Line 383 for the matches
- 
- ```
-  printf("%s:%d of %d(Longest run %d)\n", name, found, total,longest_run);
-  ```
-  Line 387 for the non matches
-  ```
-  printf("%s not found, min long run not long enough \n",name);
-  ```
-
+### To change the database path
+File ./src/sdhash.cpp
+```
+const char* DATA_BASE = "<absolute_path>";
+```
+const char* DATA_BASE
 ### To modify the threshold of consecutive features  
 File ./header/config.h  
-Line 16 - min_run
 ```
 #define MIN_RUN <number>
 ```
 ### To change the Bloom Filter size
 File ./header/config.h  
-Line 22  
+```
+#define BF_SIZE_IN_BYTES <number>
+```
 Obs.: The size must be power of two and expressed in bytes.
+
+### Options 
+There are two main options:
+-Create BF 
+-Search the given bf for files
+
+And there are two ways of making such operations:
+-With a list 
+-With a dir/file name
+
+To create a bf with a dir/filename:
+```
+./net_sd -g DIR/FILE > filter.sdbf
+```
+
+To create a bf with a list:
+```
+./net_sd -d LIST.TXT > filter.sdbf
+```
+
+To search a file/dir into a given bf digest:
+```
+./net_sd -c filter.sdbf DIR/FILE > resultados.txt
+```
+To search a list of files into a given bf digest:
+```
+./net_sd -i filter.sdbf list.txt > resultados.txt
+```
+
+Obs.: I have not tested using a dir inside the given dir, so if you are going to use it please check for possible errors.
