@@ -56,9 +56,9 @@ And there are two ways of making such operations:
 # Usage
 - To create:
   - a bf with a dir/filename:
-    ```
-    ./net_sd -g DIR/FILE > filter.sdbf
-    ```
+  ```
+  ./net_sd -g DIR/FILE > filter.sdbf
+  ```
 
    - a bf with a list:
    ```
