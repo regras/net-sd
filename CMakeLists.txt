@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.5)
 
 #set(CMAKE_VERBOSE_MAKEFILE off)
 
-project(mrsh_sd)
+project(net_sd)
 
 set(CMAKE_CXX_FLAGS "-w -std=c++14 -ggdb -O3 -D_BSD_SOURCE -fpermissive")
 
@@ -21,6 +21,6 @@ find_package(Boost 1.73.0 EXACT REQUIRED COMPONENTS filesystem)
 set_source_files_properties(${CPP_FILES} PROPERTIES LANGUAGE CXX)
 
 
-add_executable(mrsh_sd  ${CPP_FILES})
+add_executable(net_sd  ${CPP_FILES})
 
-target_link_libraries(mrsh_sd -lm -lssl -lcrypto Boost::filesystem)
+target_link_libraries(net_sd -lm -lssl -lcrypto Boost::filesystem)
