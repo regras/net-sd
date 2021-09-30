@@ -1,4 +1,10 @@
-# mrsh-sd
+# Repository Organization
+
+This repository contains two branches:
+- The main, which contains the original `NET-SD` implmentation.
+- The `NCF-NET-SD` implementation, which is removes common blocks.
+
+# NET-SD
 A similarity search tool based on mrsh-v2 and modified to take advantage of sdhash characteristics.
 
 ## Instructions
@@ -9,7 +15,7 @@ A similarity search tool based on mrsh-v2 and modified to take advantage of sdha
 - CMake
 
 #### Boost
-1. Extract the library folder onto mrsh-sd's main folder
+1. Extract the library folder onto `NET-SD`'s main folder
  
 2. Inside boost folder Run:
 ```
@@ -49,21 +55,21 @@ And there are two ways of making such operations:
 
 To create a bf with a dir/filename:
 ```
-./mrsh_sd -g DIR/FILE > filter.sdbf
+./net_sd -g DIR/FILE > filter.sdbf
 ```
 
 To create a bf with a list:
 ```
-./mrsh_sd -d LIST.TXT > filter.sdbf
+./net_sd -d LIST.TXT > filter.sdbf
 ```
 
 To search a file/dir into a given bf digest:
 ```
-./mrsh_sd -c filter.sdbf DIR/FILE > resultados.txt
+./net_sd -c filter.sdbf DIR/FILE > resultados.txt
 ```
 To search a list of files into a given bf digest:
 ```
-./mrsh_sd -i filter.sdbf list.txt > resultados.txt
+./net_sd -i filter.sdbf list.txt > resultados.txt
 ```
 
-Obs.: I have not tested using a dir inside the given dir, so if you are going to use it please check for possible erros.
+Obs.: I have not tested using a dir inside the given dir, so if you are going to use it please check for possible errors.
