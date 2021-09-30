@@ -7,8 +7,18 @@ This repository contains two branches:
 # NET-SD
 This tool is an adaptation of `MRSH-NET`, a similarity search tool based on `MRSH-V2`. This implementation changes the feature extraction tool, which is originally `MRSH-V2`'s to `sdhash`'s, aiming to improve its perfomance.
 
-## Instructions
+# Related Publications
+```
+- Velho, J. P. B., Moia, V. H. G., and Henriques, M. A. A. (2020). Entendendo e melhorando
+a capacidade de detecçao de estrategias de busca de similaridade em investigações
+forenses. XX Brazilian Symposium on information and computational systems security,
+Brazilian Computer Society (SB).
 
+- Breitinger, F., Baier, H., and White, D. (2014a). On the database lookup problem of
+approximate matching. Digital Investigation, 11:S1–S9
+```
+
+## Instructions
 ### Dependencies
 - Boost
 - OpenSSL (for sha1 hash)
@@ -78,11 +88,4 @@ And there are two ways of making such operations:
 Obs.: I have not tested using a dir inside the given dir, so if you are going to use it please check for possible errors.
 
 
-# Related Publications
-- Velho, J. P. B., Moia, V. H. G., and Henriques, M. A. A. (2020). Entendendo e melhorando
-a capacidade de detecçao de estrategias de busca de similaridade em investigações
-forenses. XX Brazilian Symposium on information and computational systems security,
-Brazilian Computer Society (SB).
 
-- Breitinger, F., Baier, H., and White, D. (2014a). On the database lookup problem of
-approximate matching. Digital Investigation, 11:S1–S9
