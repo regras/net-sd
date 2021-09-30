@@ -46,6 +46,7 @@ Obs.: The size must be power of two and expressed in bytes.
 
 ### Options 
 There are two main options:
+
 -Create BF 
 -Search the given bf for files
 
