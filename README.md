@@ -9,7 +9,8 @@ A common block removing implementation from `NET-SD`.
 
 
 # Related Publications
-```- Velho, J. P. B., Moia, V. H. G., and Henriques, M. A. A. (2020). Entendendo e melhorando
+```
+- Velho, J. P. B., Moia, V. H. G., and Henriques, M. A. A. (2020). Entendendo e melhorando
 a capacidade de detecçao de estrategias de busca de similaridade em investigações
 forenses. XX Brazilian Symposium on information and computational systems security,
 Brazilian Computer Society (SB).
